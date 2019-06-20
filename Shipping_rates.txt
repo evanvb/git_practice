@@ -8,7 +8,7 @@ def ground_shipping(weight):
   else:
     return weight * 4.75 + 20
   
-print(ground_shipping(8.4))
+print("$"+str(ground_shipping(8.4)))
 
 premium_ground_shipping = 125
 
@@ -22,7 +22,7 @@ def drone_shipping(weight):
   else:
     return weight * 14.25
   
-print(drone_shipping(1.5))
+print("$" + str(drone_shipping(1.5)))
 
 def cheapest_shipping(weight):
   if premium_ground_shipping > ground_shipping(weight) < drone_shipping(weight):
